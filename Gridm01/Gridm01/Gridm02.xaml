@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Gridm01.Gridm02">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Black" RowSpacing="10" ColumnSpacing="20">
+            <Button Text="bt1" Grid.Row="0" Grid.Column="0" BackgroundColor="Yellow"/>
+            <Button Text="bt2" Grid.Row="0" Grid.Column="1" BackgroundColor="Teal"/>
+            <Button Text="bt3" Grid.Row="0" Grid.Column="2" BackgroundColor="Violet"/>
+            <Button Text="bt4" Grid.Row="0" Grid.Column="3" BackgroundColor="PowderBlue"/>
+            <Button Text="bt5 Rowspan" Grid.Row="1" Grid.RowSpan="1" Grid.Column="1" BackgroundColor="Lime"/>
+            <Button Text="bt6" Grid.Row="1" Grid.Column="2" BackgroundColor="Goldenrod"/>
+            <Button Text="bt7" Grid.Row="2" Grid.Column="0" BackgroundColor="ForestGreen" Clicked="btVoltar"/>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="2"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
